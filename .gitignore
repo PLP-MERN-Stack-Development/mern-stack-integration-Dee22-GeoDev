@@ -1,0 +1,5 @@
+client/src/.env
+server/.env
+node modules/
+client/node_modules/
+server/node_modules/

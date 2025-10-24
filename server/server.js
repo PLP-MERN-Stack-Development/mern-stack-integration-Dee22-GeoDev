@@ -6,7 +6,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
-
+// const cors = require('cors');
+// app.use(cors());
 // Import routes
 const postRoutes = require('./routes/posts');
 const categoryRoutes = require('./routes/categories');
@@ -67,6 +68,10 @@ mongoose
     console.error('Failed to connect to MongoDB', err);
     process.exit(1);
   });
+
+
+
+
 
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (err) => {
